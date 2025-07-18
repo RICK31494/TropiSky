@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora el Paraíso - Reserva tu Viaje</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+ 
+</head>
+
+<body>
+  
+  <section class="hero">
+    <h1 class="titulo">Reserva ahora y <br> empieza tu viaje <br> al paraíso</h1>
+    
+    <header class="header">
+      <div class="logo">
+        <img src="assets/logo/logo_blanco.svg" alt="Logo">
+      </div>
+
+      <nav class="nav desktop">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#servicios">Servicios</a>
+            <ul>
+              <li><a href="#vuelos">Vuelos</a></li>
+              <li><a href="#hoteles">Hoteles</a></li>
+              <li><a href="#paquetes">Paquetes</a></li>
+              <li><a href="#autos">Alquiler Autos</a></li>
+              <li><a href="#ofertas">Ofertas</a></li>
+            </ul>
+          </li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Acerca</a></li>
+        </ul>
+      </nav>
+
+      <div class="user desktop">
+        <div class="perfil">
+          <img src="assets/perfil.jpeg" alt="Perfil">
+        </div>
+        <button class="login-btn">Iniciar Sesión</button>
+      </div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span class="open">&#9776;</span>
+        <span class="close">&times;</span>
+      </label>
+
+      <div class="menu-mobile">
+        <div class="user">
+          <div class="perfil">
+            <img src="assets/perfil.jpeg" alt="Perfil">
+          </div>
+          <button class="login-btn">Iniciar Sesión</button>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#vuelos">Vuelos</a></li>
+          <li><a href="#hoteles">Hoteles</a></li>
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#autos">Alquiler Autos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Acerca</a></li>
+        </ul>
+      </div>
+    </header>
+  </section>
+
+  <main class="contenido">
+    <!-- Buscador de vuelos -->
+    <section class="buscador-vuelos">
+      <div class="contenedor-buscador">
+        <h2>Reserva tu próxima aventura</h2>
+        <p>Descubre destinos increíbles y vive experiencias únicas</p>
+        <form class="formulario-busqueda">
+          <div class="campo">
+            <label for="origen">Origen</label>
+            <input type="text" id="origen" placeholder="¿Desde dónde viajas?">
+          </div>
+          <div class="campo">
+            <label for="destino">Destino</label>
+            <input type="text" id="destino" placeholder="¿A dónde quieres ir?">
+          </div>
+          <div class="campo">
+            <label for="ida">Fecha de ida</label>
+            <input type="date" id="ida">
+          </div>
+          <div class="campo">
+            <label for="regreso">Fecha de regreso</label>
+            <input type="date" id="regreso">
+          </div>
+          <div class="campo">
+            <label for="pasajeros">Pasajeros</label>
+            <select id="pasajeros">
+              <option value="1">1 Pasajero</option>
+              <option value="2">2 Pasajeros</option>
+              <option value="3">3 Pasajeros</option>
+              <option value="4">4+ Pasajeros</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="clase">Clase</label>
+            <select id="clase">
+              <option value="economica">Económica</option>
+              <option value="ejecutiva">Ejecutiva</option>
+              <option value="primera">Primera Clase</option>
+            </select>
+          </div>
+        </form>
+        <div class="boton-buscar">
+          <button type="submit">Buscar mi viaje soñado</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+      <div class="container">
+        <div class="seccion-titulo">
+          <h2>Nuestros Servicios</h2>
+          <p>Todo lo que necesitas para tu viaje perfecto en un solo lugar</p>
+        </div>
+        <div class="servicios-grid">
+          <div class="servicio-card">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Vuelos">
+            <div class="servicio-card-content">
+              <h3>Vuelos</h3>
+              <p>Encuentra los mejores vuelos a precios increíbles. Compara aerolíneas y horarios.</p>
+              <div class="precio">Desde $299</div>
+            </div>
+          </div>
+          <div class="servicio-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Hoteles">
+            <div class="servicio-card-content">
+              <h3>Hoteles</h3>
+              <p>Alojamientos exclusivos desde resorts de lujo hasta hoteles boutique.</p>
+              <div class="precio">Desde $89/noche</div>
+            </div>
+          </div>
+          <div class="servicio-card">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Alquiler de Autos">
+            <div class="servicio-card-content">
+              <h3>Alquiler de Autos</h3>
+              <p>Vehículos modernos y seguros para explorar tu destino con total libertad.</p>
+              <div class="precio">Desde $45/día</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinos populares -->
+    <section class="destinos" id="destinos">
+      <div class="container">
+        <div class="seccion-titulo">
+          <h2>Destinos Populares</h2>
+          <p>Descubre los lugares más increíbles del mundo</p>
+        </div>
+        <div class="destinos-grid">
+          <div class="destino-card" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+            <div class="destino-card-content">
+              <h3>Maldivas</h3>
+              <p>Paraíso tropical con aguas cristalinas</p>
+            </div>
+          </div>
+          <div class="destino-card" style="background-image: url('https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+            <div class="destino-card-content">
+              <h3>Santorini</h3>
+              <p>Atardeceres mágicos en el mar Egeo</p>
+            </div>
+          </div>
+          <div class="destino-card" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+            <div class="destino-card-content">
+              <h3>Bali</h3>
+              <p>Cultura exótica y playas paradisíacas</p>
+            </div>
+          </div>
+          <div class="destino-card" style="background-image: url('https://images.unsplash.com/photo-1502780402662-acc01917949e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')">
+            <div class="destino-card-content">
+              <h3>Tokio</h3>
+              <p>Metrópolis moderna llena de tradición</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+       <div class="banner-container">
+        <div class="pet-images">
+            <div class="pets-grid">
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+                <div class="pet-bg-image"></div>
+            </div>
+        </div>
+        <div class="background-overlay"></div>
+        
+        <div class="content">
+            <div class="text-section">
+                <h1 class="airline-name">🌴 Tropisky </h1>
+                <p class="tagline">Descubre paraísos tropicales</p>
+                <div class="pet-feature">
+                    🐕 🐱 ¡Viaja con tus mascotas!
+                </div>
+            </div>
+            
+            <div class="visual-section">
+                <div class="plane-icon">✈️</div>
+                <div class="pets-container">
+                    <div class="pet-icon">🐕</div>
+                    <div class="pet-icon">🐱</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="palm-decoration">🌴</div>
+        <div class="sunshine">☀️</div>
+    </div>
+
+    <!-- Testimonios -->
+    <section class="testimonios" id="testimonios">
+      <div class="container">
+        <div class="seccion-titulo">
+          <h2>Lo que dicen nuestros viajeros</h2>
+          <p>Experiencias reales de personas que han vivido aventuras increíbles</p>
+        </div>
+        <div class="testimonios-grid">
+          <div class="testimonio-card">
+            <p>"El mejor viaje de mi vida. La atención al detalle y el servicio fueron excepcionales. Definitivamente volveré a reservar con ellos."</p>
+            <div class="testimonio-autor">María García - Madrid</div>
+          </div>
+          <div class="testimonio-card">
+            <p>"Increíble experiencia desde el primer momento. Todo estuvo perfectamente organizado y superó mis expectativas."</p>
+            <div class="testimonio-autor">Carlos Rodríguez - Barcelona</div>
+          </div>
+          <div class="testimonio-card">
+            <p>"Profesionales, confiables y con los mejores precios. Mi familia y yo quedamos encantados con el servicio."</p>
+            <div class="testimonio-autor">Ana Martínez - Valencia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacto
